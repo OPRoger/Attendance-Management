@@ -38,50 +38,74 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 10),
             Container(
                 child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Container(
-                  child:const  Text(
-                    'Admin Login',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Container(
+                      child:const  Text(
+                        'Admin Login',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                SizedBox(height: 20),
-                Container(
-                  width: 300, // Adjust the width as needed
-                  decoration: BoxDecoration(
-                    color: Colors.black12,
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: const TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Username',
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20.0),
+                    SizedBox(height: 20),
+                    Container(
+                      width: 300, // Adjust the width as needed
+                      decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Username',
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.all(20.0),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                SizedBox(height: 20),
-                Container(
-                  width: 300, // Adjust the width as needed
-                  decoration: BoxDecoration(
-                    color: Colors.black12,
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: const TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      hintText: 'Password',
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20.0),
+                    SizedBox(height: 20),
+                    Container(
+                      width: 300, // Adjust the width as needed
+                      decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      child: const TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          hintText: 'Password',
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.all(20.0),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ],
-            )),
+                    Container(
+                      alignment: Alignment.bottomRight,
+                      child: TextButton(
+                        onPressed: () => (''),
+                        style: TextButton.styleFrom(
+                          // backgroundColor: Colors.teal,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 40.0, vertical: 15.0),
+                          // shape: RoundedRectangleBorder(
+                          //   borderRadius: BorderRadius.circular(10.0),
+                          // ),
+                        ),
+                        child: const Text(
+                          'Forgot Password?',
+                          style: TextStyle(
+                            fontSize: 17.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+
+                )
+            ),
             SizedBox(height: 20),
             Container(
               child: Row(
